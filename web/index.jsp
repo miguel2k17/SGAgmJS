@@ -21,6 +21,12 @@
                         Consulta nuestro cat&aacute;logo de personas
                     </a>
                 </div>
+                
+                <div class="subtitulo">
+                    <a href="${pageContext.request.contextPath}/ServletControlador?accion=listarUsuarios">
+                        Consulta nuestro cat&aacute;logo de usuarios
+                    </a>
+                </div>        
             </div>
             <div id="footer">
                 <jsp:include page="/WEB-INF/pages/commons/footer.jsp"/>

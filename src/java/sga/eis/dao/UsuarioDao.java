@@ -5,67 +5,76 @@
  * 
  * For more information please visit http://www.codefutures.com/products/firestorm
  */
-
 package sga.eis.dao;
 
+import java.sql.Connection;
 import sga.eis.dto.*;
 import sga.eis.exceptions.*;
 
-public interface UsuarioDao
-{
-	/** 
-	 * Inserts a new row in the usuario table.
-	 */
-	public UsuarioPk insert(Usuario dto) throws UsuarioDaoException;
+public interface UsuarioDao {
 
-	/** 
-	 * Updates a single row in the usuario table.
-	 */
-	public void update(UsuarioPk pk, Usuario dto) throws UsuarioDaoException;
+    /**
+     * Inserts a new row in the usuario table.
+     */
+    public UsuarioPk insert(Usuario dto) throws UsuarioDaoException;
 
-	/** 
-	 * Deletes a single row in the usuario table.
-	 */
-	public void delete(UsuarioPk pk) throws UsuarioDaoException;
+    /**
+     * Updates a single row in the usuario table.
+     */
+    public void update(UsuarioPk pk, Usuario dto) throws UsuarioDaoException;
 
-	/** 
-	 * Returns the rows from the usuario table that matches the specified primary-key value.
-	 */
-	public Usuario findByPrimaryKey(UsuarioPk pk) throws UsuarioDaoException;
+    /**
+     * Deletes a single row in the usuario table.
+     */
+    public void delete(UsuarioPk pk) throws UsuarioDaoException;
 
-	/** 
-	 * Returns all rows from the usuario table that match the criteria 'id_usuario = :idUsuario'.
-	 */
-	public Usuario findByPrimaryKey(Integer idUsuario) throws UsuarioDaoException;
+    /**
+     * Returns the rows from the usuario table that matches the specified
+     * primary-key value.
+     */
+    public Usuario findByPrimaryKey(UsuarioPk pk) throws UsuarioDaoException;
 
-	/** 
-	 * Returns all rows from the usuario table that match the criteria ''.
-	 */
-	public Usuario[] findAll() throws UsuarioDaoException;
+    /**
+     * Returns all rows from the usuario table that match the criteria
+     * 'id_usuario = :idUsuario'.
+     */
+    public Usuario findByPrimaryKey(Integer idUsuario) throws UsuarioDaoException;
 
-	/** 
-	 * Returns all rows from the usuario table that match the criteria 'id_persona = :idPersona'.
-	 */
-	public Usuario[] findByPersona(Integer idPersona) throws UsuarioDaoException;
+    /**
+     * Returns all rows from the usuario table that match the criteria ''.
+     */
+    public Usuario[] findAll() throws UsuarioDaoException;
 
-	/** 
-	 * Sets the value of maxRows
-	 */
-	public void setMaxRows(int maxRows);
+    /**
+     * Returns all rows from the usuario table that match the criteria
+     * 'id_persona = :idPersona'.
+     */
+    public Usuario[] findByPersona(Integer idPersona) throws UsuarioDaoException;
 
-	/** 
-	 * Gets the value of maxRows
-	 */
-	public int getMaxRows();
+    /**
+     * Sets the value of maxRows
+     */
+    public void setMaxRows(int maxRows);
 
-	/** 
-	 * Returns all rows from the usuario table that match the specified arbitrary SQL statement
-	 */
-	public Usuario[] findByDynamicSelect(String sql, Object[] sqlParams) throws UsuarioDaoException;
+    /**
+     * Gets the value of maxRows
+     */
+    public int getMaxRows();
 
-	/** 
-	 * Returns all rows from the usuario table that match the specified arbitrary SQL statement
-	 */
-	public Usuario[] findByDynamicWhere(String sql, Object[] sqlParams) throws UsuarioDaoException;
+    /**
+     * Returns all rows from the usuario table that match the specified
+     * arbitrary SQL statement
+     */
+    public Usuario[] findByDynamicSelect(String sql, Object[] sqlParams) throws UsuarioDaoException;
+
+    /**
+     * Returns all rows from the usuario table that match the specified
+     * arbitrary SQL statement
+     */
+    public Usuario[] findByDynamicWhere(String sql, Object[] sqlParams) throws UsuarioDaoException;
+
+    public Connection getUserConn();
+
+    public void setUserConn(Connection userConn);
 
 }

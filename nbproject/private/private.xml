@@ -3,12 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/exceptions/DaoException.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/web/WEB-INF/pages/sga/detallePersona.jsp</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/services/UsuarioService.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/jdbc/PersonaDaoImpl.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/web/ServletControlador.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/web/resources/funciones.js</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/dto/Persona.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/web/WEB-INF/pages/sga/detalleUsuario.jsp</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/web/WEB-INF/pages/sga/listadoPersonas.jsp</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/services/impl/PersonaServiceImpl.java</file>
             <file>file:/E:/Practicas%20Java/SGA_V2/web/index.jsp</file>
-            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/exceptions/UsuarioDaoException.java</file>
-            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/factory/UsuarioDaoFactory.java</file>
-            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/exceptions/PersonaDaoException.java</file>
-            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/factory/PersonaDaoFactory.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/services/impl/UsuarioServiceImpl.java</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/web/WEB-INF/pages/sga/listadoUsuarios.jsp</file>
+            <file>file:/E:/Practicas%20Java/SGA_V2/src/java/sga/eis/dto/Usuario.java</file>
         </group>
     </open-files>
 </project-private>
